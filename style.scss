@@ -60,10 +60,16 @@
   &:hover {
     background-color: #79aa89;
   }
+
+  &:focus {
+    background-color: #79aa89;
+    border-radius: 50%;
+  }
 }
 
 .button-active {
-  background-color: #79aa89 !important
+  background-color: #79aa89 !important;
+  border-radius: 50%;
 }
 
 .dark {
