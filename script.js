@@ -3,15 +3,25 @@ function createPage() {
   const wrapper = document.createElement('div');
   wrapper.className = 'wrapper';
 
+  const tittle = document.createElement('h2');
+  tittle.className = 'tittle';
+  tittle.innerHTML = `Виртуальная клавиатура`
+
   const textarea = document.createElement('textarea');
   textarea.className = 'textarea';
 
   const keyboard = document.createElement('div');
   keyboard.className = 'keyboard';
 
+  const helptext = document.createElement('p');
+  helptext.className = 'helptext';
+  helptext.innerHTML = `Клавиатура создана в системе Windows <br> Для переключения языка: левый ctrl + alt`
+
   body.append(wrapper)
+  wrapper.append(tittle)
   wrapper.append(textarea)
   wrapper.append(keyboard)
+  wrapper.append(helptext)
 }
 createPage()
 const rusArr = ['ё', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', 'Backspace', 'Tab', 'й', 'ц', 'у', 'к', 'е', 'н', 'г', 'ш', 'щ', 'з', 'х', 'ъ', '\\', 'Del', 'CapsLock', 'ф', 'ы', 'в', 'а', 'п', 'р', 'о', 'л', 'д', 'ж', 'э', 'Enter', 'Shift', 'я', 'ч', 'с', 'м', 'и', 'т', 'ь', 'б', 'ю', '.', '', 'Shift', 'Ctrl', 'Win', 'Alt', ' ', 'Alt', '', '', '', 'Ctrl',]
