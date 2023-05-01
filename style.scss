@@ -1,0 +1,82 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.textarea {
+  width: 750px;
+  height: 100px;
+  margin: 20px auto;
+}
+
+.keyboard {
+  width: 750px;
+  margin: 20px auto;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #888888;
+  border: 3px solid #222222;
+  border-radius: 10px;
+}
+
+.button {
+  height: 40px;
+  width: 40px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #444444;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: #79aa89;
+  }
+  &[data-code ='Backspace'],
+  &[data-code ='Tab'],
+  &[data-code ='Delete'],
+  &[data-code ='CapsLock'],
+  &[data-code ='Enter'],
+  &[data-code ='ShiftLeft'],
+  &[data-code ='ShiftRight'],
+  &[data-code ='ControlLeft'],
+  &[data-code ='MetaLeft'],
+  &[data-code ='AltLeft'],
+  &[data-code ='AltRight'],
+  &[data-code ='ControlRight'],
+  &[data-code ='ArrowLeft'],
+  &[data-code ='ArrowRight'],
+  &[data-code ='ArrowDown'],
+  &[data-code ='ArrowUp']{
+    background-color: #222222;
+  }
+  &[data-code='Backspace'],
+  &[data-code='CapsLock'],
+  &[data-code='ShiftLeft'] {
+    width: 100px;
+  }
+  &[data-code='Space'] {
+    width: 350px;
+  }
+  
+  &[data-code='Enter'],
+  &[data-code='ShiftRight'] {
+    width: 90px;
+  }
+  
+  &[data-code='Delete'],
+  &[data-code='Tab'] {
+    width: 45px;
+  }
+}
+
+
+
