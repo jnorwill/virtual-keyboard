@@ -38,25 +38,6 @@
   transition: 0.5s;
 
   &[data-code='Backspace'],
-  &[data-code='Tab'],
-  &[data-code='Delete'],
-  &[data-code='CapsLock'],
-  &[data-code='Enter'],
-  &[data-code='ShiftLeft'],
-  &[data-code='ShiftRight'],
-  &[data-code='ControlLeft'],
-  &[data-code='MetaLeft'],
-  &[data-code='AltLeft'],
-  &[data-code='AltRight'],
-  &[data-code='ControlRight'],
-  &[data-code='ArrowLeft'],
-  &[data-code='ArrowRight'],
-  &[data-code='ArrowDown'],
-  &[data-code='ArrowUp'] {
-    background-color: #222222;
-  }
-
-  &[data-code='Backspace'],
   &[data-code='CapsLock'],
   &[data-code='ShiftLeft'] {
     width: 100px;
@@ -83,4 +64,8 @@
 
 .button-active {
   background-color: #79aa89 !important
+}
+
+.dark {
+  background-color: #222222;
 }
