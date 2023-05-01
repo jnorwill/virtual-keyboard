@@ -37,46 +37,50 @@
   cursor: pointer;
   transition: 0.5s;
 
-  &:hover {
-    background-color: #79aa89;
-  }
-  &[data-code ='Backspace'],
-  &[data-code ='Tab'],
-  &[data-code ='Delete'],
-  &[data-code ='CapsLock'],
-  &[data-code ='Enter'],
-  &[data-code ='ShiftLeft'],
-  &[data-code ='ShiftRight'],
-  &[data-code ='ControlLeft'],
-  &[data-code ='MetaLeft'],
-  &[data-code ='AltLeft'],
-  &[data-code ='AltRight'],
-  &[data-code ='ControlRight'],
-  &[data-code ='ArrowLeft'],
-  &[data-code ='ArrowRight'],
-  &[data-code ='ArrowDown'],
-  &[data-code ='ArrowUp']{
+  &[data-code='Backspace'],
+  &[data-code='Tab'],
+  &[data-code='Delete'],
+  &[data-code='CapsLock'],
+  &[data-code='Enter'],
+  &[data-code='ShiftLeft'],
+  &[data-code='ShiftRight'],
+  &[data-code='ControlLeft'],
+  &[data-code='MetaLeft'],
+  &[data-code='AltLeft'],
+  &[data-code='AltRight'],
+  &[data-code='ControlRight'],
+  &[data-code='ArrowLeft'],
+  &[data-code='ArrowRight'],
+  &[data-code='ArrowDown'],
+  &[data-code='ArrowUp'] {
     background-color: #222222;
   }
+
   &[data-code='Backspace'],
   &[data-code='CapsLock'],
   &[data-code='ShiftLeft'] {
     width: 100px;
   }
+
   &[data-code='Space'] {
     width: 350px;
   }
-  
+
   &[data-code='Enter'],
   &[data-code='ShiftRight'] {
     width: 90px;
   }
-  
+
   &[data-code='Delete'],
   &[data-code='Tab'] {
     width: 45px;
   }
+
+  &:hover {
+    background-color: #79aa89;
+  }
 }
 
-
-
+.button-active {
+  background-color: #79aa89 !important
+}

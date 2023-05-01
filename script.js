@@ -38,5 +38,13 @@ function createKeyboard() {
 		keyboard.append(button)
 	})
 }
-
 createKeyboard()
+
+document.addEventListener('keydown', function (event) {
+	const button = document.querySelector(`.button[data-code ='${event.code}']`)
+	button.classList.add('button-active')
+});
+document.addEventListener('keyup', function (event) {
+	const button = document.querySelector(`.button[data-code ='${event.code}']`)
+	button.classList.remove('button-active')
+});
