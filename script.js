@@ -66,12 +66,11 @@ document.addEventListener('keydown', (event) => {
     button.classList.add('button-active');
 
     if (!darkArr.includes(button.dataset.code)) {
-        const text = event.key;
+        const text = document.querySelector(`.button[data-code='${event.code}']`).innerHTML;
         document.querySelector('textarea').innerHTML += text;
     }
 
     pressed.add(event.code);
-    console.log(pressed);
     if (pressed.has('ControlLeft') && pressed.has('AltLeft')) {
         if (localStorage.getItem('leng') === 'eng') {
             localStorage.setItem('leng', 'rus');
